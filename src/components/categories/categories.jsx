@@ -197,8 +197,8 @@ const Categories = () => {
 
         {/* Video Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {filteredVideos.map((video,index) => (
-            <div key={index} className="relative group rounded-xl overflow-hidden shadow-lg">
+          {filteredVideos.map((video) => (
+            <div key={video.id} className="relative group rounded-xl overflow-hidden shadow-lg">
               <img
                 src={video.image}
                 alt={video.title}
